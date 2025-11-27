@@ -19,6 +19,7 @@ namespace WindowsFormsApplication1
         public anketa()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
         private void anketa_Load(object sender, EventArgs e)
         {
@@ -48,8 +49,8 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Успешно!", "Успешно!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 oplata opl = new oplata();
                 this.Hide();
-                opl.Show();
-                opl.FormClosed += (s, args) => this.Show();
+                opl.ShowDialog();
+                this.Close();
             }
             else
             {
@@ -60,5 +61,9 @@ namespace WindowsFormsApplication1
 
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

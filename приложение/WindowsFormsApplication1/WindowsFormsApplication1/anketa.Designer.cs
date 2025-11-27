@@ -151,10 +151,10 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(656, 283);
+            this.textBox2.Location = new System.Drawing.Point(513, 283);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(394, 26);
+            this.textBox2.Size = new System.Drawing.Size(537, 26);
             this.textBox2.TabIndex = 5;
             // 
             // label3
@@ -164,9 +164,10 @@
             this.label3.Location = new System.Drawing.Point(135, 275);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(510, 33);
+            this.label3.Size = new System.Drawing.Size(370, 33);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Введите номер телефона или почту:";
+            this.label3.Text = "Введите номер телефона:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
