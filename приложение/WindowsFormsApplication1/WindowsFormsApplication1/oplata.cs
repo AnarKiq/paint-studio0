@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public oplata()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -24,8 +25,16 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            oplata f = new oplata();
-            f.Show();
+            MessageBox.Show("Успешно!", "Успешно!");
+            Application.Exit();
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Успешно!", "Успешно!");
+            Application.Exit();
         }
     }
 }
